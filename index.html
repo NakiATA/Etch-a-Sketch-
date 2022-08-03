@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch-</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Sketch Pad</h1>
+        </div>
+        <!-- /title -->
+        <div class="mode">Mode: Coloring</div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button class="blackButton" onclick="changeColor('black')">
+                    Black
+                </button>
+                <button class="erasorButton" onclick="changeColor('white')">
+                    Erasor
+                </button>
+                <button class="greenButton" onclick="changeColor('green')">Green</button>
+                <button class="randomButton" onclick="changeColor('random')">
+                    Random
+                </button>
+                <button class="resetButton" onclick="resetBoard()">Reset</button>
+            </div>
+            <!-- /buttons -->
+        </div>
+        <!-- /content -->
+        <div>
+            <input type="text" placeholder="Size of Board" onchange="changeSize(this.value)" />
+            <button class="sizeButton">Set Size</button>
+        </div>
+        <div class="error">Input must be between 1 and 100</div>
+        <section class="end_page">
+            <div class="page_background">
+                <p class="p_autors">
+                    Naki_ATA for © The Odin Project 2022
+                </p>
+            </div>
+            <!-- /page_background -->
+        </section>
+        <!-- /section -->
+    </div>
+    <!-- /container -->
+</body>
+<script src="main.js"></script>
+
+</html>
